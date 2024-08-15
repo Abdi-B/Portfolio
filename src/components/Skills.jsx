@@ -1,7 +1,8 @@
 const Skills = () => {
   return (
     <div className="skills-container">
-      <h2>Skills</h2>
+      <h2>Technical Skills</h2>
+      <h3>1) Front-end</h3>
       <div className="grid-skills">
         <div className="skill-card html">
           <i className="fa-brands fa-html5 html-icon"></i>
@@ -23,6 +24,9 @@ const Skills = () => {
           <i className="fa-brands fa-react react-icon"></i>
           <p>React</p>
         </div>
+      </div>
+      <h3>2) Back-end </h3>
+      <div className="grid-skills">
         <div className="skill-card node">
           <i className="fa-brands fa-node-js node-icon"></i>
           <p>Node js</p>
@@ -39,6 +43,9 @@ const Skills = () => {
           <i className="fa-brands fa-laravel laravel-icon"></i>
           <p>Laravel</p>
         </div>
+      </div>
+      <h3>3) Databases</h3>
+      <div className="grid-skills">
         <div className="skill-card">
           <i className="fa-brands fa-mongodb  mongodb-icon"></i>
           <p>Mongodb</p>
@@ -46,6 +53,10 @@ const Skills = () => {
         <div className="skill-card">
           <i className="fa-brands fa-mySQL"></i>
           <p>MySQL</p>
+        </div>
+        <div className="skill-card">
+          <i className="fa-brands fa-mySQL"></i>
+          <p>PostgreSQL</p>
         </div>
       </div>
     </div>
