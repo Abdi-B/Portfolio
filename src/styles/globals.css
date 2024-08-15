@@ -210,13 +210,7 @@ hr {
   margin: 1rem 0;
   width: 80%;
 }
-.hero-container .hero-text h1 {
-  text-align: center;
-}
-.hero-container .hero-text p span {
-  color: #ffcc1a;
-  font-weight: bolder;
-}
+
 
 @media screen and (max-width: 768px) {
   .hero-container {
@@ -239,12 +233,18 @@ hr {
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .hero-container .hero-text p {
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
+}
+
+.hero-container .hero-text p span {
+  color: #ffcc1a;
+  font-weight: bolder;
 }
 
 .hero-container .social-icons {
