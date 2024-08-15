@@ -175,14 +175,17 @@ hr {
 }
 
 /* Hero */
-
+#Hero {
+  margin-top: 5rem;
+}
 .hero-container {
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
+  margin-top: 1rem;
 }
 
 .hero-container .profile-img {
@@ -194,19 +197,29 @@ hr {
 }
 
 .hero-container .hero-text {
-  text-align: center;
+  text-align: justify;
   margin: 1rem 0;
   width: 80%;
 }
+.hero-container .hero-text p span {
+  color: #ffcc1a;
+  font-weight: bolder;
+}
 
 @media screen and (max-width: 768px) {
-
+  .hero-container {
+    /* margin-top: 7rem; */
+    /* padding: 3rem 0; */
+  }
   .hero-container .hero-text {
     width: 100%;
-    
+    font-size: 0.5rem;
+    font-weight: lighter;
   }
   .hero-container .profile-img {
-      margin: 2rem auto;
+    margin: 2rem auto;
+    width: 180px;
+    height: 180px;
   }
 }
 
