@@ -73,14 +73,16 @@ li:hover {
   font-weight: bold;
 }
 .hometocontact li a:focus,
-.hometocontact li a:active {
+.hometocontact li .active {
   /* outline: none; */
-  padding: 0; /* Ensure no additional padding is applied */
+  /* padding: 0; Ensure no additional padding is applied */
+  text-decoration: underline;
+  color: #f7df1e;
+  font-weight: bold;
 }
 .menu-icon {
   display: none;
 }
-
 .logo {
   padding-left: 1rem;
   cursor: pointer;
@@ -207,6 +209,9 @@ hr {
   text-align: justify;
   margin: 1rem 0;
   width: 80%;
+}
+.hero-container .hero-text h1 {
+  text-align: center;
 }
 .hero-container .hero-text p span {
   color: #ffcc1a;

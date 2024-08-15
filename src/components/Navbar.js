@@ -31,6 +31,8 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             onClick={closeMenu}
+            activeClass="active"
+            spy={true}
           >
             Home
           </ScrollLink>
@@ -41,6 +43,8 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             onClick={closeMenu}
+            activeClass="active"
+            spy={true}
           >
             About
           </ScrollLink>
@@ -51,6 +55,8 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             onClick={closeMenu}
+            activeClass="active"
+            spy={true}
           >
             Projects
           </ScrollLink>
@@ -61,6 +67,8 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             onClick={closeMenu}
+            activeClass="active"
+            spy={true}
           >
             Contact
           </ScrollLink>
