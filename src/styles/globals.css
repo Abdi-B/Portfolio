@@ -59,6 +59,8 @@ li {
   justify-content: space-around;
   width: 40%;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -69,6 +71,11 @@ li:hover {
   text-decoration: underline;
   color: #f7df1e;
   font-weight: bold;
+}
+.hometocontact li a:focus,
+.hometocontact li a:active {
+  /* outline: none; */
+  padding: 0; /* Ensure no additional padding is applied */
 }
 .menu-icon {
   display: none;
