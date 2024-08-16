@@ -101,6 +101,14 @@ const Skills = () => {
           <i className="fa-solid fa-code babel-icon"></i>
           <p>Babel</p>
         </div>
+        <div className="skill-card babel">
+          <i className="fa-solid fa-code babel-icon"></i>
+          <p>Jest</p>
+        </div>
+        <div className="skill-card babel">
+          <i className="fa-solid fa-code babel-icon"></i>
+          <p>Cypress</p>
+        </div>
       </div>
     </div>
   );

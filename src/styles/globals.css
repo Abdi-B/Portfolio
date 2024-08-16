@@ -320,6 +320,7 @@ hr {
   align-items: center;
   gap: 2rem;
   margin-top: 2rem;
+  width: 80%;
 }
 
 .about-container .flex-about .about-text {
@@ -333,6 +334,7 @@ hr {
   text-align: justify;
   line-height: 1.8;
   color: #333;
+  padding-left: 1rem;
 }
 .competency h3 {
   font-size: 1.8rem;
