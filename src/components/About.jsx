@@ -5,6 +5,15 @@ const About = () => {
     <section id="about">
       <div className="about-container">
         <h2>About Me</h2>
+        <p>
+              As a proficient MERN full-stack developer, I am committed to
+              crafting robust and scalable web applications that meet the
+              highest standards of performance and security. My expertise spans
+              across both front-end and back-end development, ensuring seamless
+              integration and functionality. I am adept at working in
+              collaborative environments, driving projects from concept to
+              deployment with a focus on innovation and efficiency.
+            </p>
         <div className="flex-about">
           <div className="about-text">
             {/* <p>
@@ -25,15 +34,7 @@ const About = () => {
               explore new technologies, and I am constantly seeking out
               opportunities to improve my skills and knowledge.
             </p> */}
-            <p>
-              As a proficient MERN full-stack developer, I am committed to
-              crafting robust and scalable web applications that meet the
-              highest standards of performance and security. My expertise spans
-              across both front-end and back-end development, ensuring seamless
-              integration and functionality. I am adept at working in
-              collaborative environments, driving projects from concept to
-              deployment with a focus on innovation and efficiency.
-            </p>
+            
 
             <div className="competency">
             <h3>Key Competencies:</h3>

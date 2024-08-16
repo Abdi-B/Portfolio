@@ -5,6 +5,7 @@ export const projectData = [
       description:
         'A company profile built in Next.js, Typescript and Tailwind css.',
       gitHubLink: 'https://github.com/olawanlejoel/Todo-List-App',
+      deployedLink: 'https://wadafmining2.vercel.app/'
     },
     {
       id: 2,
@@ -12,6 +13,7 @@ export const projectData = [
       description:
         'This projects is built in MERN Full Stack. Its purpose is to manage a files in a simple way and to get books provided by the company',
       gitHubLink: 'https://github.com/olawanlejoel/Book-Library',
+      deployedLink: 'https://coop-file-sharing.vercel.app/'
     },
     {
       id: 3,
@@ -19,6 +21,7 @@ export const projectData = [
       description:
         'Helps you generate quotes from about 1600 quotes written by different authors . Quotes are automatically copied to your clipboards.',
       gitHubLink: 'https://github.com/olawanlejoel/random-quote-generator',
+      deployedLink: 'https://wadafmining2.vercel.app/'
     },
     {
       id: 4,
@@ -26,6 +29,7 @@ export const projectData = [
       description:
         'Helps you generates random passwords, you can select what you want your password to entail and also you can copy generated password to clipboard.',
       gitHubLink: 'https://github.com/olawanlejoel/Password-Generator',
+      deployedLink: 'https://wadafmining2.vercel.app/'
     },
     {
       id: 5,
@@ -33,5 +37,6 @@ export const projectData = [
       description:
         'Simple Twitter UI clone built with TailwindCSS and Vue Js. This covers only the homepage of Twitter UI. This is cool to get started with TailwindCSS as it helps understand basic concepts.',
       gitHubLink: 'https://github.com/olawanlejoel/TwitterUI-clone',
+      deployedLink: 'https://wadafmining2.vercel.app/'
     },
   ];
