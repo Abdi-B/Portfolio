@@ -11,7 +11,7 @@ body {
   line-height: 1.5;
   background-color: #1d1e20;
   color: #dadadb;
-  width: 100vw;
+  width: 98vw;
   margin: 0 auto;
   padding: 0 0;
   display: flex;
@@ -283,7 +283,7 @@ hr {
   font-size: 2.5rem;
   font-weight: 700;
   color: #1d1e20;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -375,30 +375,44 @@ hr {
 /* Skills */
 .skills-container {
   padding: 2rem 0;
-  max-width: 80%;
+  max-width: 90%;
+  /* text-align: center; */
+  color: #dadadb;
+  margin: 0 2rem;
 }
 
 .skills-container h2 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffcc1a;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skills-container h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1.5rem 0;
+  color: #f7df1e;
 }
 
 .skills-container .grid-skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  /* border: 2px solid #dadadb; */
+  /* gap: 2rem; */
+  border: 2px solid #dadadb;
   border: 2px;
   box-shadow: #b3b3b3;
   padding: 0.5rem 0;
+
+  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  gap: 1rem;
+  font-size: 1.2rem;
+  /* margin-top: 1rem; */
+  /* justify-items: center; */
 }
 
-@media screen and (max-width: 768px) {
-  .skills-container .grid-skills {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 
 .skills-container .grid-skills .skill-card {
   background-color: #dadadb;
@@ -407,15 +421,120 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 0 1rem;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
+  border: 2px solid #2e2f31;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.5s ease-in-out;
-  cursor: context-menu;
+  /* transition: all 0.5s ease-in-out; */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  /* cursor: context-menu; */
+  cursor: pointer;
 }
 
-.skills-container .grid-skills i {
+/* .skills-container .grid-skills i {
   font-size: 1.5rem;
+} */
+
+/* .skill-card:hover {
+  transform: translateY(-10px);
+  background-color: #333436;
+} */
+
+.skill-card i {
+  /* font-size: 3rem; */
+  /* margin-bottom: 0.5rem; */
+  /* color: #ffcc1a; */
+}
+
+/* .skill-card p { */
+  /* font-size: 1rem; */
+  /* font-weight: 500; */
+  /* margin-top: 0.5rem; */
+/* } */
+
+
+/* Icon Specific Colors */
+/* frontend Icon */
+
+.html-icon {
+  color: #e34c26;
+}
+.html-icon {
+  color: #e34c26;
+}
+
+.css-icon {
+  color: #264de4;
+}
+
+.js-icon {
+  color: #f0db4f;
+}
+
+.ts-icon {
+  color: #3178c6;
+}
+
+.react-icon {
+  color: #61dbfb;
+}
+
+/* Backend icons */
+.node-icon {
+  color: #3c873a;
+}
+
+.express-icon {
+  color: #303030;
+}
+
+.python-icon {
+  color: #306998;
+}
+
+.laravel-icon {
+  color: #ff2d20;
+}
+/* Database Icon */
+.mongodb-icon {
+  color: #4db33d;
+}
+
+.mysql-icon {
+  color: #00758f;
+}
+
+.postgresql-icon {
+  color: #336791;
+}
+
+/* Tools and Others */
+.docker-icon {
+  color: #2496ed;
+}
+
+.git-icon {
+  color: #f34f29;
+}
+
+.rest-icon {
+  color: #f7df1e;
+}
+
+.postman-icon {
+  color: #ff6c37;
+}
+
+.graphql-icon {
+  color: #e535ab;
+}
+
+.webpack-icon {
+  color: #8ed6fb;
+}
+
+.babel-icon {
+  color: #f9dc3e;
 }
 
 .skills-container .grid-skills .html:hover {
@@ -429,6 +548,10 @@ hr {
 .skills-container .grid-skills .js:hover {
   background-color: #f7df1e;
 }
+.skills-container .grid-skills .ts:hover {
+  background-color: #3178c6;
+  color: white;
+}
 
 .skills-container .grid-skills .react:hover {
   background-color: #61dafb;
@@ -438,11 +561,88 @@ hr {
   background-color: #339933;
 }
 
-.skills-container .grid-skills .python:hover {
-  background-color: #3776ab;
+.skills-container .grid-skills .express:hover {
+  background-color: #303030;
+  color: white;
 }
+
+/* .skills-container .grid-skills .ts:hover {
+  background-color: #3178c6;
+  color: white;
+} */
 .skills-container .grid-skills .laravel:hover {
   background-color: #3776ab;
+}
+.skills-container .grid-skills .mongodb:hover {
+  background-color: #4db33d;
+  color: white;
+}
+
+.skills-container .grid-skills .mysql:hover {
+  background-color: #00758f;
+  color: white;
+}
+
+.skills-container .grid-skills .postgresql:hover {
+  background-color: #336791;
+  color: white;
+}
+
+/* Hover Effects for Tools and Others */
+.skills-container .grid-skills .docker:hover {
+  background-color: #2496ed;
+  color: white;
+}
+
+.skills-container .grid-skills .git:hover {
+  background-color: #f34f29;
+  color: white;
+}
+
+.skills-container .grid-skills .rest:hover {
+  background-color: #f7df1e;
+  color: #1d1e20;
+}
+
+.skills-container .grid-skills .postman:hover {
+  background-color: #ff6c37;
+  color: white;
+}
+
+.skills-container .grid-skills .graphql:hover {
+  background-color: #e535ab;
+  color: white;
+}
+
+.skills-container .grid-skills .webpack:hover {
+  background-color: #8ed6fb;
+  color: #1d1e20;
+}
+
+.skills-container .grid-skills .babel:hover {
+  background-color: #f9dc3e;
+  color: #1d1e20;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-container .grid-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .skills-container h3 {
+    font-size: 1.25rem;
+  }
+  .skill-card {
+    /* gap: 0 0.2rem; */
+    /* padding: 1rem; */
+  }
+  .skill-card p {
+    font-size: 0.875rem;
+  }
+
 }
 
 /* Projects */
