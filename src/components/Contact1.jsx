@@ -1,8 +1,29 @@
 import React from "react";
 
 export default function Contact1() {
+
+    async function handleSubmit(e) {
+        e.preventDefault();
+        const data = new FormData(e.currentTarget);
+        console.log(data);
+
+        try {
+            const response = await fetch('/api/contact', {
+              method: 'post',
+              body: new URLSearchParams(data),
+            });
+            if (!response.ok) {
+              throw new Error(`Invalid response: ${response.status}`);
+            }
+            alert('Thanks for contacting us, we will get back to you soon!');
+          } catch (err) {
+            console.error(err);
+            alert("We can't submit the form, try again later?");
+          }
+          
+      } 
   return (
-    <form className="contact-container">
+    <form className="contact-container" onSubmit={handleSubmit}>
       <h2>Get in touch</h2>
       <p>
         If you want me to work together, have any questions or want me to speak
