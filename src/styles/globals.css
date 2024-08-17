@@ -840,11 +840,12 @@ hr {
 .contact-container .allinputs {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
+  height: auto;
   /* background-color: #00758f; */
   justify-content: center;
+  /* align-items: center; */
   padding: 1rem;
-  
 }
 .contact-container input {
   font-size: 1.2rem;
@@ -854,7 +855,7 @@ hr {
   border-radius: 5px;
   background-color: #e8f0fe;
   display: flex;
-  width: 90%;
+  width: 100%;
 }
 
 .contact-container textarea {
@@ -864,7 +865,7 @@ hr {
   border-radius: 5px;
   background-color: #e8f0fe;
   font-size: 20px;
-  width: 90%;
+  width: 100%;
   display: flex;
 }
 /* .name div {
@@ -887,7 +888,6 @@ hr {
   justify-content: center;
 } */
 
-
 @media screen and (max-width: 768px) {
   .contact-container {
     width: 90%;
@@ -896,5 +896,3 @@ hr {
     width: 90%;
   }
 }
-
-
