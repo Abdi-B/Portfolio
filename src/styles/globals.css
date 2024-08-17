@@ -882,6 +882,10 @@ hr {
   align-items: center;
   justify-content: center;
 }
+button:hover {
+  background-color: #09a7d3;
+  cursor: pointer;
+}
 /* .allinputs button {
   display: flex;
   align-items: center;
