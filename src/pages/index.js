@@ -1,10 +1,11 @@
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Skills from '@/components/Skills';
-import Projects from '@/components/Projects';
-import Contact from '@/components/Contact';
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
-import Head from 'next/head';
+import Head from "next/head";
+import Contact1 from "@/components/Contact1";
 
 const Home = () => {
   return (
@@ -20,7 +21,8 @@ const Home = () => {
         <About />
         <Skills />
         <Projects />
-        <Contact />
+        {/* <Contact /> */}
+        <Contact1 />
       </div>
     </>
   );

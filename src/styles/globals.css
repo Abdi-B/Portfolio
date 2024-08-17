@@ -239,7 +239,6 @@ hr {
   align-items: center;
   gap: 0 1rem;
 }
-
 .hero-container .social-icons a {
   color: #9b9c9d;
   font-size: 1.5rem;
@@ -272,8 +271,6 @@ hr {
     margin-bottom: 0.5rem;
   }
 }
-
-
 
 /* About */
 .about-container {
@@ -812,23 +809,92 @@ hr {
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
+  /* background-color: #339933; */
 }
+/* .container-container1 {
+  font-size: 1.3rem;
+  border-radius: 10px;
+  width: 80%;
+  padding: 2rem;
 
-@media screen and (max-width: 768px) {
-  .contact-container {
-    width: 100%;
-  }
-}
+  box-shadow: 0 54px 55px rgb(78 78 78 / 25%), 0 -12px 30px rgb(78 78 78 / 25%),
+    0 4px 6px rgb(78 78 78 / 25%), 0 12px 13px rgb(78 78 78 / 25%),
+    0 -3px 5px rgb(78 78 78 / 25%);
+} */
 
 .contact-container h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.contact-container p {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffcc1a;
   margin-bottom: 1rem;
   text-align: center;
 }
+
+.contact-container p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 80%;
+}
+.contact-container .allinputs {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* background-color: #00758f; */
+  justify-content: center;
+  padding: 1rem;
+  
+}
+.contact-container input {
+  font-size: 1.2rem;
+  margin: 10px 0 10px 0px;
+  border-color: rgb(31, 28, 28);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e8f0fe;
+  display: flex;
+  width: 90%;
+}
+
+.contact-container textarea {
+  margin: 10px 0 10px 0px;
+  padding: 5px;
+  border-color: rgb(31, 28, 28);
+  border-radius: 5px;
+  background-color: #e8f0fe;
+  font-size: 20px;
+  width: 90%;
+  display: flex;
+}
+/* .name div {
+  display: flex;
+  flex-direction: column;
+} */
+.block button {
+  padding: 10px;
+  font-size: 20px;
+  width: 30%;
+  border: 3px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .allinputs button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    width: 90%;
+  }
+  .contact-container .allinputs {
+    width: 90%;
+  }
+}
+
+
