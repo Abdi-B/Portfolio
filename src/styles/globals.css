@@ -322,48 +322,49 @@ hr {
 }
 
 .about-container .flex-about .about-text {
-  width: 50%;
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr); */
+  width: 100%;
 }
 
 .about-container .flex-about .about-text p {
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-align: justify;
   line-height: 1.8;
   color: #333;
   padding-left: 1rem;
 }
-.competency h3 {
+.about-text h3 {
   font-size: 1.8rem;
   font-weight: 600;
   color: #264de4;
+  /* background-color: #3c873a; */
   margin-bottom: 1rem;
+  width: 93%;
+  text-align: center;
 }
-
-.competency p {
- 
-  /* gap: 2rem; */
+.about-text .competency {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.about-text .competency h5 {
+  gap: 1rem;
   font-size: 1rem;
-  color: #555;
+  font-weight: 600;
+  color: #1d1e20;
+
+  /* color: #d4de12; */
   line-height: 1.6;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem;
   /* background-color: #dadadb; */
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.7rem;
   border-radius: 10px;
   border: 2px solid #dadadb;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.competency p:hover {
+.competency h5:hover {
   transform: scale(1.04);
-}
-
-.competency span {
-  font-weight: 600;
-  color: #1d1e20;
 }
 
 .about-container .flex-about .about-img {
@@ -413,6 +414,15 @@ hr {
     max-width: 90%;
     font-size: 1.1rem;
     font-weight: 300;
+  }
+  .about-text .competency {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* background-color: #00758f; */
+    justify-content: center;
+    margin-left: 2rem;
+    /* align-items: center; */
   }
 }
 

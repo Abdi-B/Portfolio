@@ -16,59 +16,20 @@ const About = () => {
         </p>
         <div className="flex-about">
           <div className="about-text">
+             <h3>Key Competencies</h3>
             <div className="competency">
-              <h3>Key Competencies:</h3>
-              <p>
-                {" "}
-                <span>Full-Stack Development: </span> Build and maintain
-                full-stack web applications using the MERN stack.
-              </p>
-              <p>
-                {" "}
-                <span>Team Collaboration: </span> Work closely with
-                cross-functional teams to define, design, and deliver new
-                features.
-              </p>
-              <p>
-                {" "}
-                <span>API Implementation: </span> Develop and integrate RESTful
-                APIs with front-end components.
-              </p>
-              <p>
-                {" "}
-                <span>Code Quality:</span> Write clean, scalable code with
-                comprehensive documentation.
-              </p>
-              <p>
-                {" "}
-                <span>Optimization: </span> Optimize applications for maximum
-                speed and scalability.
-              </p>
-              <p>
-                {" "}
-                <span>Code Review & Debugging: </span> Conduct thorough code
-                reviews, testing, and debugging.
-              </p>
-              <p>
-                {" "}
-                <span>Security: </span> Implement robust authentication,
-                authorization, and error handling practices.
-              </p>
-              <p>
-                {" "}
-                <span>Load Balancing: </span> Utilize load balancers to enhance
-                application performance.
-              </p>
-              <p>
-                {" "}
-                <span>Middleware: </span> Integrate middleware for added
-                functionality and control.
-              </p>
-              <p>
-                {" "}
-                <span>Validation & Routing: </span> Ensure proper validation and
-                efficient routing mechanisms.
-              </p>
+              <h5>Full-Stack Development </h5>
+              <h5>Authentication and Authorization </h5>
+              <h5>API Implementation </h5>
+              <h5>Routing, Middleware and Validation </h5>
+              <h5>Code Quality </h5>
+              <h5>Error Handling</h5>
+              <h5>Code Review, Debugging and Testing </h5>
+              <h5>Load Balancing </h5>
+              <h5>Team Collaboration </h5>
+              <h5>Security </h5>
+              <h5>Optimization </h5>
+              <h5>Database Modeling</h5>
             </div>
           </div>
           {/* <div className="about-img">
