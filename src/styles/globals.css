@@ -345,7 +345,17 @@ hr {
   color: #555;
   line-height: 1.6;
   margin-bottom: 0.5rem;
+  /* background-color: #dadadb; */
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #dadadb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
+.competency p:hover {
+  transform: scale(1.04);
+} 
+
 
 .competency span {
   font-weight: 600;
