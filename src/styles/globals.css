@@ -840,7 +840,7 @@ hr {
 .contact-container .allinputs {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 60%;
   height: auto;
   /* background-color: #00758f; */
   justify-content: center;
@@ -897,6 +897,6 @@ button:hover {
     width: 90%;
   }
   .contact-container .allinputs {
-    width: 90%;
+    width: 70%;
   }
 }
