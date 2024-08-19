@@ -313,6 +313,7 @@ hr {
 
 .flex-about {
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
@@ -322,6 +323,8 @@ hr {
 
 .about-container .flex-about .about-text {
   width: 50%;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
 }
 
 .about-container .flex-about .about-text p {
@@ -341,6 +344,8 @@ hr {
 }
 
 .competency p {
+ 
+  /* gap: 2rem; */
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
@@ -354,8 +359,7 @@ hr {
 }
 .competency p:hover {
   transform: scale(1.04);
-} 
-
+}
 
 .competency span {
   font-weight: 600;
