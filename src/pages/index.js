@@ -5,7 +5,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 
 import Head from "next/head";
-import Contact1 from "@/components/Contact1";
+import Contact1 from "@/components/Contact";
 
 const Home = () => {
   return (
@@ -21,8 +21,7 @@ const Home = () => {
         <About />
         <Skills />
         <Projects />
-        {/* <Contact /> */}
-        <Contact1 />
+        <Contact />
       </div>
     </>
   );
