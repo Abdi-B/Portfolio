@@ -17,6 +17,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -114,12 +116,13 @@ li:hover {
     position: absolute;
     top: 5rem;
     /* left: 0; */
-    background-color: #1d1e20;
-    /* background-color: #c7d5f1; */
-    width: 15%;
+    /* background-color: #1d1e20; */
+    background-color: #9b9c9d;
+    width: 20%;
     flex-direction: column;
     align-items: center;
     padding: 0 0 1rem 0.5rem;
+    border-radius: 0 5px;
     /* padding: auto; */
     z-index: 1000;
   }
@@ -421,7 +424,7 @@ hr {
     width: 90%;
     /* background-color: #00758f; */
     justify-content: center;
-    margin-left: 2rem;
+    margin-left: 1rem;
     /* align-items: center; */
   }
 }
