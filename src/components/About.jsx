@@ -18,7 +18,8 @@ const About = () => {
           <div className="about-text">
              <h3>Key Competencies</h3>
             <div className="competency">
-              <h5>Full-Stack Development </h5>
+              <h5>Front-end Development </h5>
+              <h5>Back-end Development </h5>
               <h5>Authentication and Authorization </h5>
               <h5>API Implementation </h5>
               <h5>Routing, Middleware and Validation </h5>

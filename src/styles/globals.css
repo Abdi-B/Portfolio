@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 
 }
 
@@ -25,6 +25,7 @@ body {
   body {
     width: 100%;
     padding: 0 2rem;
+    overflow-x: hidden;
   }
 }
 
@@ -195,7 +196,14 @@ hr {
 #Hero {
   margin-top: 5rem;
 }
-.hero-container {
+.hero1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+.hero-container2 {
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -203,9 +211,23 @@ hr {
   flex-direction: column;
   /* padding: 2rem 0; */
   margin-top: 1rem;
+  width: 50%;
+}
+.hero-img {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  object-fit: cover;
+  /* background-color: #00758f; */
+}
+.profile-img {
+  width: 90%
 }
 
-.hero-container .profile-img {
+.hero-container2 .profile-img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -213,62 +235,78 @@ hr {
   object-fit: cover;
 }
 
-.hero-container .hero-text {
+.hero-container2 .hero-text {
   text-align: justify;
   margin: 1rem 0;
   width: 80%;
 }
-.hero-container .hero-text h1 {
+.hero-container2 .hero-text h1 {
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
   text-align: center;
 }
 
-.hero-container .hero-text p {
+.hero-container2 .hero-text p {
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 
-.hero-container .hero-text p span {
+.hero-container2 .hero-text p span {
   color: #ffcc1a;
   font-weight: bolder;
 }
 
-.hero-container .social-icons {
+.hero-container2 .social-icons {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0 1rem;
 }
-.hero-container .social-icons a {
+.hero-container2 .social-icons a {
   color: #9b9c9d;
   font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
 }
 
-.hero-container .social-icons a:hover {
+.hero-container2 .social-icons a:hover {
   color: #dadadb;
 }
 
 @media screen and (max-width: 768px) {
-  .hero-container {
+  .hero1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  }
+  .hero-container2 {
     /* margin-top: 7rem; */
     /* padding: 3rem 0; */
+    width: 100vw;
+  }
+  .hero-img {
+    width: 90vw;
+    margin-bottom: 1rem;
+
+  }
+  .profile-img {
+        width: 400px;
+        height: 300px;
   }
 
-  .hero-container .profile-img {
+  .hero-container2 .profile-img {
     margin: 2rem auto;
     width: 180px;
     height: 180px;
   }
-  .hero-container .hero-text {
-    width: 90%;
+  .hero-container2 .hero-text {
+    width: 95%;
     font-weight: lighter;
     padding: 0 2rem;
   }
-  .hero-container .hero-text p {
+  .hero-container2 .hero-text p {
     font-size: 1.1rem;
     font-weight: 300;
     margin-bottom: 0.5rem;
