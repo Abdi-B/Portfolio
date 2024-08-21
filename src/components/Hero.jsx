@@ -15,9 +15,6 @@ const Hero = () => {
           <div className="hero-text">
             <h1>Hey, I'm Abdi 👋</h1>
             <p>
-              {/* I'm a software developer based in Addis Ababa, Ethiopia. I
-              specialize in building (and occasionally designing) exceptional
-              websites, applications, and everything in between. */}
               A <span> MERN </span> Full Stack Developer with a solid foundation in building and
               maintaining dynamic web applications. Proficient in MongoDB,
               Express.js, React.js, and Node.js, I bring a comprehensive skill set
@@ -56,11 +53,21 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <hc />
+        <div className="tech-icons">
+          <i className="devicon-react-original colored"></i>
+          <i className="devicon-nextjs-original colored"></i>
+          <i className="devicon-express-original colored"></i>
+          <i className="devicon-nodejs-plain colored"></i>
+          <i className="devicon-mongodb-plain colored"></i>
+        </div>
+        
         <div className="hero-img">
+          <div> 
+              React js,Next js, express js, node js and Mongodb 
+          </div>
             <Image
               src="/images/dev.jpg"
-              className="profile-img"
+              className="home-img"
               width={500}
               height={500}
               alt="developer"
