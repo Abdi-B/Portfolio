@@ -827,6 +827,9 @@ hr {
 .project-card p {
   font-size: 1rem;
   margin-bottom: 10px;
+  /* display: flex; */
+  /* justify-content: justify; */
+  text-align: justify;
   /* color: #b3b3b3; */
 }
 .project-links {
