@@ -20,7 +20,7 @@ export const projectData = [
     title: "ATM & POS Management System",
     description:
       "A comprehensive solution designed to efficiently Manage, Create, Explore and View operations related to ATMs and POS devices. Generating detailed reports and maintaining logs, ensuring accurate tracking and monitoring of all activities",
-    gitHubLink: "https://github.com/Abdi-B/TMS.git",
+    // gitHubLink: "https://github.com/Abdi-B/TMS.git",
     deployedLink: "https://coop-file-sharing.vercel.app",
   },
   {
@@ -28,7 +28,7 @@ export const projectData = [
     title: "Ecommerce",
     description:
       "Developed a dynamic eCommerce platform using React.js and Redux, enabling efficient state management and seamless user experience. The application features product browsing, cart management, and secure checkout, optimized for performance and scalability.",
-    // gitHubLink: "https://github.com/olawanlejoel/Password-Generator",
+    gitHubLink: "https://github.com/olawanlejoel/Password-Generator",
     deployedLink: "https://wadafmining2.vercel.app/",
   },
   {
