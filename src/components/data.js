@@ -28,7 +28,7 @@ export const projectData = [
     title: "Ecommerce",
     description:
       "Developed a dynamic eCommerce platform using React.js and Redux, enabling efficient state management and seamless user experience. The application features product browsing, cart management, and secure checkout, optimized for performance and scalability.",
-    gitHubLink: "https://github.com/olawanlejoel/Password-Generator",
+    // gitHubLink: "https://github.com/olawanlejoel/Password-Generator",
     deployedLink: "https://wadafmining2.vercel.app/",
   },
   {
