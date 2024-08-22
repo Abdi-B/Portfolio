@@ -62,16 +62,22 @@ const Hero = () => {
         </div>
         
         <div className="hero-img">
-          <div> 
-              React js,Next js, express js, node js and Mongodb 
-          </div>
+          
             <Image
+              src="/images/MERN.png"
+              className="mern-img"
+              width={500}
+              height={500}
+              alt="developer"
+            />
+            {/* <Image
               src="/images/dev.jpg"
               className="home-img"
               width={500}
               height={500}
               alt="developer"
-            />
+            />  */}
+
           </div>
       </div>
     </section>
