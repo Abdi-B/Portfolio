@@ -17,7 +17,7 @@ const Hero = () => {
             <p>
               A <span> MERN </span> Full Stack Developer with a solid foundation
               in building and maintaining dynamic web applications. Proficient
-              in MongoDB, Express.js, React.js, and Node.js, I bring a
+              in MongoDB, Express.js, React.js, and Node.js.I bring a
               comprehensive skill set that spans both{" "}
               <span> front-end and back-end </span> development. Driven by a
               passion for continuous learning and professional growth, I am
@@ -26,7 +26,7 @@ const Hero = () => {
               collaborative and remote work environments, consistently managing
               time and tasks to achieve project goals efficiently.
             </p>
-            <div className="social-icons">
+            {/* <div className="social-icons">
               <a
                 // href="https://twitter.com/olawanle_joel"
                 aria-label="Twitter"
@@ -67,7 +67,7 @@ const Hero = () => {
               >
                 <i className="fa-brands fa-whatsapp"></i>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <div className="tech-icons">
@@ -88,7 +88,7 @@ const Hero = () => {
             
           />
           <Image 
-            src="/images/Express3.png"
+            src="/images/Exp4.png"
             className="express-img mern-img"
             width={100}
             height={100}
