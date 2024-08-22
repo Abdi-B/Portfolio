@@ -18,7 +18,6 @@ body {
   justify-content: center;
   align-items: center;
   /* overflow-x: hidden; */
-
 }
 
 @media screen and (max-width: 768px) {
@@ -201,7 +200,6 @@ hr {
   justify-content: center;
   align-items: center;
   width: 100%;
-
 }
 .hero-container2 {
   height: 90vh;
@@ -217,26 +215,40 @@ hr {
   width: 50%;
   height: 90vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  /* flex-direction: column; */
+  /* justify-content: space-around; */
   align-items: center;
+  gap: 1rem;
   border-radius: 10px;
   object-fit: cover;
   /* background-color: whitesmoke; */
-  color:#b3b3b3;
+  color: #b3b3b3;
   /* padding: 2rem 1rem; */
 }
 .mern-img {
-  width: 90%;
-  height: 60%;
-  border-radius: 10px
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
 }
+
+.mongodb-img {
+  /* width: 300px; */
+  /* height: 150px;
+  border-radius: 10px; */
+}
+.express-img {
+  /* width: 200px; */
+  background-color: white;
+}
+.react-img {
+  /* width: 200px; */
+}
+
 .home-img {
   width: 60%;
   height: 45%;
   margin-top: 2rem;
   border-radius: 10px;
-  
 }
 
 .hero-container2 .profile-img {
@@ -291,7 +303,6 @@ hr {
     display: flex;
     flex-direction: column;
     width: 100%;
-
   }
   .hero-container2 {
     /* margin-top: 7rem; */
@@ -302,14 +313,12 @@ hr {
     width: 90vw;
     height: 70vh;
     margin-bottom: 1rem;
-
   }
   .mern-img {
-
   }
   .profile-img {
-        width: 400px;
-        height: 300px;
+    width: 400px;
+    height: 300px;
   }
 
   .hero-container2 .profile-img {
