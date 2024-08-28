@@ -101,6 +101,9 @@ const Hero = () => {
             height={100}
             alt="developer"
           />
+          {/* <div className="react-img mern-img">
+          <i class="fa-brands fa-react fa-spin"></i>
+          </div> */}
           <Image
             src="/images/Nodejs.png"
             className="mern-img"
@@ -108,10 +111,10 @@ const Hero = () => {
             height={100}
             alt="developer"
           />
-
-          {/* <FontAwesomeIcon icon="fa-brands fa-react" />
-        <i class="fa-brands fa-react fa-spin"></i>
-        <i class="fa-brands fa-node fa-fade"></i> */}
+          {/* <FontAwesomeIcon icon="fa-brands fa-react" /> */}
+        {/* <i class="fa-brands fa-react fa-spin"></i>
+        <i class="fa-brands fa-node fa-fade"></i>
+        <i class="fas fa-database mongo-icon "></i> */}
 
           {/* <Image
               src="/images/MERN.png"
