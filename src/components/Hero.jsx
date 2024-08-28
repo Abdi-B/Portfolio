@@ -3,7 +3,6 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <section id="Hero">
-      <div className="hero1">
         <div className="hero-container2">
           <Image
             src="/images/profile.jpeg"
@@ -68,71 +67,44 @@ const Hero = () => {
               collaborative and remote work environments, consistently managing
               time and tasks to achieve project goals efficiently.
             </p>
+            <div className="hero-img">
+              <Image
+                src="/images/mongodb.jpg"
+                className="mongodb-img mern-img"
+                width={150}
+                height={100}
+                alt="developer" 
+                
+              />
+              <Image 
+                src="/images/Exp4.png"
+                className="express-img mern-img"
+                width={100}
+                height={100}
+                alt="developer"
+              />
+              <Image
+                src="/images/Reactjs2.png"
+                className="react-img mern-img"
+                width={100}
+                height={100}
+                alt="developer"
+              />
+
+              <Image
+                src="/images/Nodejs.png"
+                className="mern-img"
+                width={100}
+                height={100}
+                alt="developer"
+              />
+        </div>
             
           </div>
         </div>
-        {/* <div className="tech-icons">
-          <i className="devicon-react-original colored"></i>
-          <i className="devicon-nextjs-original colored"></i>
-          <i className="devicon-express-original colored"></i>
-          <i className="devicon-nodejs-plain colored"></i>
-          <i className="devicon-mongodb-plain colored"></i>
-        </div> */}
+        
 
-        <div className="hero-img">
-          <Image
-            src="/images/mongodb.jpg"
-            className="mongodb-img mern-img"
-            width={150}
-            height={100}
-            alt="developer" 
-            
-          />
-          <Image 
-            src="/images/Exp4.png"
-            className="express-img mern-img"
-            width={100}
-            height={100}
-            alt="developer"
-          />
-          <Image
-            src="/images/Reactjs2.png"
-            className="react-img mern-img"
-            width={100}
-            height={100}
-            alt="developer"
-          />
-          {/* <div className="react-img mern-img">
-          <i class="fa-brands fa-react fa-spin"></i>
-          </div> */}
-          <Image
-            src="/images/Nodejs.png"
-            className="mern-img"
-            width={100}
-            height={100}
-            alt="developer"
-          />
-          {/* <FontAwesomeIcon icon="fa-brands fa-react" /> */}
-        {/* <i class="fa-brands fa-react fa-spin"></i>
-        <i class="fa-brands fa-node fa-fade"></i>
-        <i class="fas fa-database mongo-icon "></i> */}
 
-          {/* <Image
-              src="/images/MERN.png"
-              className="mern-img"
-              width={500}
-              height={500}
-              alt="developer"
-            /> */}
-          {/* <Image
-              src="/images/dev.jpg"
-              className="home-img"
-              width={500}
-              height={500}
-              alt="developer"
-            />  */}
-        </div>
-      </div>
     </section>
   );
 };
