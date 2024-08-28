@@ -197,33 +197,34 @@ hr {
 }
 .hero1 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 .hero-container2 {
-  height: 90vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   /* padding: 2rem 0; */
-  margin-top: 1rem;
-  width: 50%;
+  /* margin-top: 1rem; */
+  width: 90%;
 }
 .hero-img {
-  width: 50%;
-  height: 90vh;
+  width: 80%;
+  /* height: 90vh; */
   display: flex;
   /* flex-direction: column; */
-  /* justify-content: space-around; */
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   border-radius: 10px;
   object-fit: cover;
   /* background-color: whitesmoke; */
   color: #b3b3b3;
-  /* padding: 2rem 1rem; */
+  padding: 1rem;
 }
 .mern-img {
   width: 200px;
@@ -279,7 +280,7 @@ hr {
   font-size: 1.2rem;
   font-weight: 400;
   /* margin-bottom: 1rem; */
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .hero-container2 .hero-text p span {
