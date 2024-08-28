@@ -278,7 +278,8 @@ hr {
 .hero-container2 .hero-text p {
   font-size: 1.2rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  margin: 2rem 0;
 }
 
 .hero-container2 .hero-text p span {
