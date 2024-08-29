@@ -28,7 +28,7 @@ export const projectData = [
     title: "Ecommerce",
     description:
       "Developed a dynamic eCommerce platform using React.js and Redux, enabling efficient state management and seamless user experience. The application features product browsing, cart management, and secure checkout, optimized for performance and scalability.",
-    gitHubLink: "https://github.com/olawanlejoel/Password-Generator",
+    // gitHubLink: "https://github.com/olawanlejoel/Password-Generator",
     deployedLink: "https://wadafmining2.vercel.app/",
   },
   {
@@ -36,7 +36,7 @@ export const projectData = [
     title: "Twitter UI Clone",
     description:
       "Simple Twitter UI clone built with TailwindCSS and Vue Js. This covers only the homepage of Twitter UI. This is cool to get started with TailwindCSS as it helps understand basic concepts.",
-    gitHubLink: "https://github.com/olawanlejoel/TwitterUI-clone",
+    // gitHubLink: "https://github.com/olawanlejoel/TwitterUI-clone",
     deployedLink: "https://wadafmining2.vercel.app/",
   },
 ];
