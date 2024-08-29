@@ -37,6 +37,7 @@ export const projectData = [
     description:
       "Simple Twitter UI clone built with TailwindCSS and Vue Js. This covers only the homepage of Twitter UI. This is cool to get started with TailwindCSS as it helps understand basic concepts.",
     // gitHubLink: "https://github.com/olawanlejoel/TwitterUI-clone",
-    deployedLink: "https://wadafmining2.vercel.app/",
+    deployedLink: "https://coop-file-sharing.vercel.app",
+
   },
 ];
