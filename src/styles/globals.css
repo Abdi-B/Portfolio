@@ -261,6 +261,7 @@ hr {
 
 .hero-container2 .hero-text {
   width: 90%;
+
   /* max-width: 800px; */
   
   /* background-color: #99424f; */
@@ -345,6 +346,11 @@ hr {
   .hero-container2 .hero-text {
     width: 60%;
     text-align: left;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: #00758f; */
   }
 
   .hero-container2 .hero-text p {
