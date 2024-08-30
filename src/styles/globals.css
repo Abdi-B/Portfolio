@@ -12,6 +12,8 @@ body {
   background-color: #1d1e20;
   color: #dadadb;
   width: 98vw;
+  /* width: 100%;
+  max-width: 1200px; */
   margin: 0 auto;
   padding: 0 0;
   display: flex;
@@ -311,9 +313,9 @@ hr {
     width: 100%;
     height: 100%;
     display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     /* background-color: green; */
   }
   /* .hero-img {
@@ -344,9 +346,8 @@ hr {
     font-size: 1.2rem;
     font-weight: 300;
     margin-bottom: 0.5rem;
-
   }
-  
+
   .mern-img {
     width: 120px;
     height: 90px;
@@ -510,10 +511,16 @@ hr {
 /* Skills */
 .skills-container {
   padding: 2rem 0;
-  max-width: 90%;
+  width: 100%;
   /* text-align: center; */
   color: #dadadb;
-  margin: 0 2rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  align-items: center;
+  background-color: #2496ed;
+  margin: 0 auto;
+  /* text-align: center; */
 }
 
 .skills-container h2 {
@@ -534,17 +541,14 @@ hr {
 .skills-container .grid-skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* gap: 2rem; */
-  border: 2px solid #dadadb;
-  border: 2px;
+  gap: 1rem;
+  /* border: 2px solid #dadadb; */
   box-shadow: #b3b3b3;
   padding: 0.5rem 0;
-
-  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-  gap: 1rem;
-  font-size: 1.2rem;
-  /* margin-top: 1rem; */
-  /* justify-items: center; */
+  /* font-size: 1.2rem; */
+  width:80%;
+  background-color: red;
+  margin: 0 auto;
 }
 
 .skills-container .grid-skills .skill-card {
@@ -553,7 +557,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 1rem;
+  gap: 0 0.5rem;
   padding: 1.5rem;
   border-radius: 10px;
   border: 2px solid #2e2f31;
@@ -564,217 +568,235 @@ hr {
   cursor: pointer;
 }
 
-/* .skills-container .grid-skills i {
-  font-size: 1.5rem;
-} */
 
-/* .skill-card:hover {
+.skills-container .grid-skills .skill-card:hover {
   transform: translateY(-10px);
   background-color: #333436;
-} */
-
-.skill-card i {
-  /* font-size: 3rem; */
-  /* margin-bottom: 0.5rem; */
-  /* color: #ffcc1a; */
 }
-
-/* .skill-card p { */
-/* font-size: 1rem; */
-/* font-weight: 500; */
-/* margin-top: 0.5rem; */
-/* } */
 
 /* Icon Specific Colors */
 /* frontend Icon */
-
 .html-icon {
   color: #e34c26;
 }
-.html-icon {
-  color: #e34c26;
-}
-
 .css-icon {
   color: #264de4;
 }
-
 .js-icon {
   color: #f0db4f;
 }
-
 .ts-icon {
   color: #3178c6;
 }
-
 .react-icon {
   color: #61dbfb;
 }
+.redux-icon {
+  color: #764abc;
+}
+.materialui-icon {
+  color: #0081cb;
+}
+.tailwind-icon {
+  color: #38bdf8;
+}
 
-/* Backend icons */
+/* Backend Icon */
 .node-icon {
   color: #3c873a;
 }
-
 .express-icon {
   color: #303030;
 }
-
-.python-icon {
-  color: #306998;
-}
-
 .laravel-icon {
   color: #ff2d20;
 }
-/* Database Icon */
 .mongodb-icon {
   color: #4db33d;
 }
-
 .mysql-icon {
   color: #00758f;
 }
-
 .postgresql-icon {
   color: #336791;
 }
 
-/* Tools and Others */
+/* Others Icon */
 .docker-icon {
   color: #2496ed;
 }
-
 .git-icon {
   color: #f34f29;
 }
-
 .rest-icon {
   color: #f7df1e;
 }
-
 .postman-icon {
   color: #ff6c37;
 }
-
 .graphql-icon {
   color: #e535ab;
 }
-
 .webpack-icon {
   color: #8ed6fb;
 }
-
 .babel-icon {
   color: #f9dc3e;
 }
+.jest-icon {
+  color: #99424f;
+}
+.cypress-icon {
+  color: #17202a;
+}
+.figma-icon {
+  color: #f24e1e;
+}
 
+/* Hover Effects for Skill Cards */
 .skills-container .grid-skills .html:hover {
   background-color: #e34f26;
+  color: white;
 }
-
 .skills-container .grid-skills .css:hover {
   background-color: #264de4;
+  color: white;
 }
-
 .skills-container .grid-skills .js:hover {
   background-color: #f7df1e;
+  color: #1d1e20;
 }
 .skills-container .grid-skills .ts:hover {
   background-color: #3178c6;
   color: white;
 }
-
 .skills-container .grid-skills .react:hover {
   background-color: #61dafb;
+  color: #1d1e20;
 }
-
 .skills-container .grid-skills .node:hover {
   background-color: #339933;
+  color: white;
 }
-
 .skills-container .grid-skills .express:hover {
   background-color: #303030;
   color: white;
 }
-
-/* .skills-container .grid-skills .ts:hover {
-  background-color: #3178c6;
-  color: white;
-} */
 .skills-container .grid-skills .laravel:hover {
-  background-color: #3776ab;
+  background-color: #ff2d20;
+  color: white;
 }
 .skills-container .grid-skills .mongodb:hover {
   background-color: #4db33d;
   color: white;
 }
-
 .skills-container .grid-skills .mysql:hover {
   background-color: #00758f;
   color: white;
 }
-
 .skills-container .grid-skills .postgresql:hover {
   background-color: #336791;
   color: white;
 }
-
-/* Hover Effects for Tools and Others */
 .skills-container .grid-skills .docker:hover {
   background-color: #2496ed;
   color: white;
 }
-
 .skills-container .grid-skills .git:hover {
   background-color: #f34f29;
   color: white;
 }
-
 .skills-container .grid-skills .rest:hover {
   background-color: #f7df1e;
   color: #1d1e20;
 }
-
 .skills-container .grid-skills .postman:hover {
   background-color: #ff6c37;
   color: white;
 }
-
 .skills-container .grid-skills .graphql:hover {
   background-color: #e535ab;
   color: white;
 }
-
 .skills-container .grid-skills .webpack:hover {
   background-color: #8ed6fb;
   color: #1d1e20;
 }
-
 .skills-container .grid-skills .babel:hover {
   background-color: #f9dc3e;
   color: #1d1e20;
 }
+.skills-container .grid-skills .jest:hover {
+  background-color: #99424f;
+  color: white;
+}
+.skills-container .grid-skills .cypress:hover {
+  background-color: #17202a;
+  color: white;
+}
+.skills-container .grid-skills .figma:hover {
+  background-color: #f24e1e;
+  color: white;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
+  .skills-container {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+  .skills-container h2 {
+    font-size: 1.7rem;
+  }
+
+  .skills-container h3 {
+    font-size: 1.45rem;
+  }
   .skills-container .grid-skills {
     grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    /* margin: 0 2rem 0 0; */
+    margin: 0 auto;
+    width: 70%;
+  }
+ 
+  .skills-container .grid-skills .skill-card {
+    /* gap: 0 0.2rem; */
+    padding: 1rem;
+    margin: 0.5rem 0.25rem;
+  }
+  .skill-card p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skills-container {
+    margin: 0 auto;
   }
   .skills-container h2 {
     font-size: 1.5rem;
   }
 
-  .skills-container h3 {
-    font-size: 1.25rem;
+  .skills-container .grid-skills {
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 0.2rem;
+    /* margin: 0 2rem 0 0; */
+    /* margin: 0 auto; */
+    width: 60%;
+    margin-left: 20px;
   }
-  .skill-card {
-    /* gap: 0 0.2rem; */
-    /* padding: 1rem; */
-  }
-  .skill-card p {
-    font-size: 0.875rem;
+
+  .skills-container .skill-card {
+    padding: 0.75rem;
+    margin: 0.25rem 0.125rem;
   }
 }
+
 
 /* Projects */
 .projects-container {

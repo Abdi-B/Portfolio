@@ -2,7 +2,7 @@ const Skills = () => {
   return (
     <div className="skills-container">
       <h2>Technical Skills</h2>
-      
+
       <h3>1) Front-end</h3>
       <div className="grid-skills">
         <div className="skill-card html">
@@ -38,7 +38,7 @@ const Skills = () => {
           <p>Tailwind CSS</p>
         </div>
       </div>
-      
+
       <h3>2) Back-end</h3>
       <div className="grid-skills">
         <div className="skill-card node">
@@ -54,7 +54,7 @@ const Skills = () => {
           <p>Laravel</p>
         </div>
       </div>
-      
+
       <h3>3) Databases</h3>
       <div className="grid-skills">
         <div className="skill-card mongodb">
@@ -70,7 +70,7 @@ const Skills = () => {
           <p>PostgreSQL</p>
         </div>
       </div>
-      
+
       <h3>4) Tools and Others</h3>
       <div className="grid-skills">
         <div className="skill-card docker">
@@ -90,24 +90,29 @@ const Skills = () => {
           <p>Postman</p>
         </div>
         <div className="skill-card graphql">
-          <i className="fa-solid fa-code graphql-icon"></i>
+          <i className="fa-brands fa-graphql graphql-icon"></i>
           <p>GraphQL</p>
         </div>
         <div className="skill-card webpack">
           <i className="fa-solid fa-box-open webpack-icon"></i>
+          {/* <i className="fa-brands fa-webpack webpack-icon"></i> */}
           <p>Webpack</p>
         </div>
         <div className="skill-card babel">
-          <i className="fa-solid fa-code babel-icon"></i>
+          <i className="fa-brands fa-code babel-icon"></i>
           <p>Babel</p>
         </div>
-        <div className="skill-card babel">
-          <i className="fa-solid fa-code babel-icon"></i>
+        <div className="skill-card jest">
+          <i className="fa-solid fa-vial jest-icon"></i>
           <p>Jest</p>
         </div>
-        <div className="skill-card babel">
-          <i className="fa-solid fa-code babel-icon"></i>
+        <div className="skill-card cypress">
+          <i className="fa-solid fa-robot cypress-icon"></i>
           <p>Cypress</p>
+        </div>
+        <div className="skill-card figma">
+          <i className="fa-brands fa-figma figma-icon"></i>
+          <p>Figma</p>
         </div>
       </div>
     </div>

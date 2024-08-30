@@ -31,6 +31,7 @@ const About = () => {
               <h5>Security </h5>
               <h5>Optimization </h5>
               <h5>Database Modeling</h5>
+              <h5>UI/UX Design</h5>
             </div>
           </div>
           {/* <div className="about-img">
