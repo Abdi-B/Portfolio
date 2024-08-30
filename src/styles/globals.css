@@ -420,7 +420,7 @@ hr {
   width: 100%;
 }
 
-.about-container .flex-about .about-text p {
+/* .about-container .flex-about .about-text p {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
@@ -428,7 +428,8 @@ hr {
   line-height: 1.8;
   color: #333;
   padding-left: 1rem;
-}
+} */
+
 .about-text h3 {
   font-size: 1.8rem;
   font-weight: 600;
@@ -441,6 +442,7 @@ hr {
 .about-text .competency {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+    /* background-color: #3c873a; */
 }
 .about-text .competency h5 {
   gap: 1rem;
@@ -492,6 +494,7 @@ hr {
 @media screen and (max-width: 768px) {
   .about-container .flex-about {
     flex-direction: column;
+    width: 100%;
   }
 
   .about-container .flex-about .about-text {
@@ -511,13 +514,16 @@ hr {
     font-weight: 300;
   }
   .about-text .competency {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
+    /* display: flex;
+    flex-direction: column;*/
+    width: 100%; 
     /* background-color: #00758f; */
-    justify-content: center;
-    margin-left: 1rem;
+    /* justify-content: center;
+    margin-left: 1rem; */
     /* align-items: center; */
+
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
   }
 }
 

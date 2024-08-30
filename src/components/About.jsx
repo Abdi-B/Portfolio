@@ -23,9 +23,10 @@ const About = () => {
               <h5>Authentication and Authorization </h5>
               <h5>API Implementation </h5>
               <h5>Routing, Middleware and Validation </h5>
+              <h5>Code Review, Debugging and Testing </h5>
               <h5>Code Quality </h5>
               <h5>Error Handling</h5>
-              <h5>Code Review, Debugging and Testing </h5>
+              
               <h5>Load Balancing </h5>
               <h5>Team Collaboration </h5>
               <h5>Security </h5>
