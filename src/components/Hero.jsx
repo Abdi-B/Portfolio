@@ -4,57 +4,61 @@ const Hero = () => {
   return (
     <section id="Hero">
         <div className="hero-container2">
-          <Image
-            src="/images/profile.jpeg"
-            className="profile-img"
-            width={300}
-            height={300}
-            alt="Abdi's personal img"
-          />
-          <div className="hero-text">
+          <div className="hero-profile">   
+            <Image
+              src="/images/profile.jpeg"
+              className="profile-img"
+              width={300}
+              height={300}
+              alt="Abdi's personal img"
+            />
             <h1>Hey, I'm Abdi 👋</h1>
-            <div className="social-icons">
-              <a
-                // href="https://twitter.com/olawanle_joel"
-                aria-label="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-twitter"></i>
-              </a>
-              <a
-                // href="https://github.com/olawanlejoel"
-                aria-label="GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-github"></i>
-              </a>
-              <a
-                // href="https://www.linkedin.com/in/olawanlejoel/"
-                aria-label="LinkedIn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-linkedin"></i>
-              </a>
-              <a
-                // href="https://www.linkedin.com/in/olawanlejoel/"
-                aria-label="Telegram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-telegram"></i>
-              </a>
-              <a
-                // href="https://www.linkedin.com/in/olawanlejoel/"
-                aria-label="WhatsApp"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa-brands fa-whatsapp"></i>
-              </a>
+              <div className="social-icons">
+                <a
+                  // href="https://twitter.com/olawanle_joel"
+                  aria-label="Twitter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-brands fa-twitter"></i>
+                </a>
+                <a
+                  // href="https://github.com/olawanlejoel"
+                  aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-brands fa-github"></i>
+                </a>
+                <a
+                  // href="https://www.linkedin.com/in/olawanlejoel/"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-brands fa-linkedin"></i>
+                </a>
+                <a
+                  // href="https://www.linkedin.com/in/olawanlejoel/"
+                  aria-label="Telegram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-brands fa-telegram"></i>
+                </a>
+                <a
+                  // href="https://www.linkedin.com/in/olawanlejoel/"
+                  aria-label="WhatsApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-brands fa-whatsapp"></i>
+                </a>
             </div>
+          </div>
+
+          <div className="hero-text">
+            
             <p>
               A <span> MERN </span> Full Stack Developer with a solid foundation
               in building and maintaining dynamic web applications. Proficient
