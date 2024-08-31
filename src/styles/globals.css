@@ -502,6 +502,24 @@ hr {
     margin-left: 2rem;
   }
 
+  .about-text .competency h5 {
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    /* color: #1d1e20; */
+  
+
+    /* color: #d4de12; */
+    /* line-height: 1.6; */
+    margin: 0.3rem;
+    /* background-color: #dadadb; */
+    padding: 0.3rem 0.5rem;
+    /* border-radius: 10px; */
+    border: 2px solid #dadadb;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* transition: transform 0.3s ease, background-color 0.3s ease; */
+  }
+
   .about-container .flex-about .about-img {
     width: 80%;
   }
@@ -942,7 +960,12 @@ hr {
     margin: 0 2rem;
   }
   .projects-grid {
-    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-columns: repeat(1, 1fr); */
+    display: flex;
+    flex-direction: column;
+    
+
+
   }
   .project-card {
     width: 90vw;
