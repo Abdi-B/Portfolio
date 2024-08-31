@@ -1030,16 +1030,6 @@ hr {
   margin: 0 auto;
   /* background-color: #339933; */
 }
-/* .container-container1 {
-  font-size: 1.3rem;
-  border-radius: 10px;
-  width: 80%;
-  padding: 2rem;
-
-  box-shadow: 0 54px 55px rgb(78 78 78 / 25%), 0 -12px 30px rgb(78 78 78 / 25%),
-    0 4px 6px rgb(78 78 78 / 25%), 0 12px 13px rgb(78 78 78 / 25%),
-    0 -3px 5px rgb(78 78 78 / 25%);
-} */
 
 .contact-container h2 {
   font-size: 2.5rem;
@@ -1054,55 +1044,55 @@ hr {
   font-weight: 400;
   margin-bottom: 1rem;
   text-align: center;
-  width: 80%;
+  width: 100%;
 }
 .contact-container .allinputs {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  height: auto;
+  width: 100%;
+  /* height: auto; */
   /* background-color: #00758f; */
-  justify-content: center;
+  /* justify-content: center; */
   /* align-items: center; */
-  padding: 1rem;
+  /* padding: 1rem; */
+
+  max-width: 600px;
 }
-.contact-container input {
-  font-size: 1.2rem;
-  margin: 10px 0 10px 0px;
-  border-color: rgb(31, 28, 28);
-  padding: 10px;
+.contact-container input,
+.contact-container textarea {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  padding: 0.75rem;
+  border: 1px solid #dadadb;
   border-radius: 5px;
   background-color: #e8f0fe;
-  display: flex;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-container textarea {
-  margin: 10px 0 10px 0px;
-  padding: 5px;
-  border-color: rgb(31, 28, 28);
-  border-radius: 5px;
-  background-color: #e8f0fe;
-  font-size: 20px;
-  width: 100%;
-  display: flex;
+  resize: vertical;
 }
-/* .name div {
-  display: flex;
-  flex-direction: column;
-} */
+ 
 .block button {
-  padding: 10px;
-  font-size: 20px;
-  width: 30%;
-  border: 3px solid black;
+  padding: 0.75rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 200px;
+  /* border: 2px solid #09a7d3; */
   border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* background-color: transparent; */
+
+  color: #09a7d3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  align-self: center;
 }
+
 button:hover {
   background-color: #09a7d3;
+  color: white;
   cursor: pointer;
 }
 /* .allinputs button {
@@ -1113,9 +1103,41 @@ button:hover {
 
 @media screen and (max-width: 768px) {
   .contact-container {
-    width: 90%;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .contact-container h2 {
+    font-size: 1.75rem;
+  }
+
+  .contact-container p {
+    font-size: 1rem;
+  }
+
+  .contact-container .allinputs {
+    width: 80%;
+  }
+
+  .block button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-container {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .contact-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-container p {
+    font-size: 0.9rem;
+    margin-left: 1rem;
   }
   .contact-container .allinputs {
-    width: 70%;
+    width: 90%;
   }
 }
