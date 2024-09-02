@@ -22,8 +22,17 @@ const Hero = () => {
                 >
                   <i className="fa-brands fa-twitter"></i>
                 </a>
+
+                <a 
+                  href="https://join.skype.com/invite/O8dYUnRViYh2"
+                  aria-label="Skype"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="fa-brands fa-skype"></i>
+                </a>
                 <a
-                  // href="https://github.com/olawanlejoel"
+                  href="https://github.com/Abdi-B"
                   aria-label="GitHub"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -39,7 +48,7 @@ const Hero = () => {
                   <i className="fa-brands fa-linkedin"></i>
                 </a>
                 <a
-                  // href="https://www.linkedin.com/in/olawanlejoel/"
+                  href="https://t.me/hopeab99"
                   aria-label="Telegram"
                   target="_blank"
                   rel="noopener noreferrer"
