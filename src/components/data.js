@@ -3,7 +3,7 @@ export const projectData = [
     id: 1,
     title: "Wadaf Ethiopia Mining PLC",
     description:
-      "A company profile built in Next.js, Typescript and Tailwind css.",
+      "The profile was built using Next.js, TypeScript, and Tailwind CSS to ensure a modern, responsive, and performant web application.",
     gitHubLink: " https://github.com/Abdi-B/wadafmining",
     deployedLink: "https://wadafmining2.vercel.app/",
   },
@@ -11,7 +11,7 @@ export const projectData = [
     id: 2,
     title: "Cooperative Bank  file Sharing",
     description:
-      "This projects is built in MERN Full Stack. Its purpose is to manage a files in a simple way and to get books provided by the company",
+      "This MERN stack project streamlines file management and provides easy access to company-provided books. It features an intuitive interface for uploading, organizing, and retrieving files, enhancing document accessibility for employees.",
     gitHubLink: "https://github.com/Abdi-B/coopFileMangement.git",
     deployedLink: "https://coop-file-sharing.vercel.app/",
   },
@@ -19,7 +19,7 @@ export const projectData = [
     id: 3,
     title: "ATM & POS Management System",
     description:
-      "A comprehensive solution designed to efficiently Manage, Create, Explore and View operations related to ATMs and POS devices. Generating detailed reports and maintaining logs, ensuring accurate tracking and monitoring of all activities",
+      "A comprehensive solution designed to efficiently Manage, Create, Explore and View operations related to ATMs and POS devices. Generating detailed reports and maintaining logs, ensuring accurate tracking and monitoring activities.",
     // gitHubLink: "https://github.com/Abdi-B/TMS.git",
     // deployedLink: "https://coop-file-sharing.vercel.app",
   },
