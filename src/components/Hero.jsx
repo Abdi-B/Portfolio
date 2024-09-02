@@ -68,7 +68,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-text">
-          <p>
+          {/* <p>
             A <span> MERN </span> Full Stack Developer with a solid foundation
             in building and maintaining dynamic web applications. Proficient in
             MongoDB, Express.js, React.js, and Node.js.I bring a comprehensive
@@ -79,6 +79,15 @@ const Hero = () => {
             self-motivated, I excel in both collaborative and remote work
             environments, consistently managing time and tasks to achieve
             project goals efficiently.
+          </p> */}
+          <p>
+          I’m, a passionate Full Stack Developer dedicated to 
+          crafting dynamic, responsive web applications. With a solid foundation in 
+          both <span> front-end and back-end </span> technologies, I build seamless digital 
+          experiences that are not only visually engaging but also highly functional. 
+          From intuitive user interfaces to robust server-side logic, 
+          I’m committed to delivering high-quality, scalable solutions that meet the 
+          needs of modern web applications.
           </p>
           <div className="hero-img">
             <Image
