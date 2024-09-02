@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="hero-profile">
           <Image
             // src="/images/profile.jpeg"
-            src=""
+            src="/images/aiUser.jpg"
             className="profile-img"
             width={300}
             height={300}
@@ -81,13 +81,13 @@ const Hero = () => {
             project goals efficiently.
           </p> */}
           <p>
-          I’m, a passionate Full Stack Developer dedicated to 
-          crafting dynamic, responsive web applications. With a solid foundation in 
-          both <span> front-end and back-end </span> technologies, I build seamless digital 
-          experiences that are not only visually engaging but also highly functional. 
-          From intuitive user interfaces to robust server-side logic, 
-          I’m committed to delivering high-quality, scalable solutions that meet the 
-          needs of modern web applications.
+            I’m, a passionate Full Stack Developer dedicated to crafting
+            dynamic, responsive web applications. With a solid foundation in
+            both <span> front-end and back-end </span> technologies, I build
+            seamless digital experiences that are not only visually engaging but
+            also highly functional. From intuitive user interfaces to robust
+            server-side logic, I’m committed to delivering high-quality,
+            scalable solutions that meet the needs of modern web applications.
           </p>
           <div className="hero-img">
             <Image
