@@ -1,9 +1,9 @@
-import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -12,6 +12,20 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      closeMenu();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="nav-container">
@@ -24,7 +38,7 @@ const Navbar = () => {
         </ScrollLink>
       </div>
 
-      <ul className={`hometocontact ${isMenuOpen ? "open" : ""}`}>
+      <ul className={`hometocontact ${isMenuOpen ? "open" : ""}`} ref={menuRef}>
         <li className="list">
           <ScrollLink
             to="Hero"
