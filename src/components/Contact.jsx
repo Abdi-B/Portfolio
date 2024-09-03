@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function Contact() { 
+export default function Contact() {
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
+  function handleInputChange(e) {
+    const form = e.currentTarget.form || e.currentTarget;
+    const allFilled = Array.from(form.elements).every((input) =>
+      input.required ? input.value.trim() !== "" : true
+    );
+    setIsButtonDisabled(!allFilled);
+  }
+
   async function handleSubmit(e) {
     e.preventDefault();
     const form = e.currentTarget;
@@ -15,7 +25,8 @@ export default function Contact() {
         throw new Error(`Invalid response: ${response.status}`);
       }
       alert("Thanks for contacting us, we will get back to you soon!");
-      form.reset(); // Reset the form fields
+      form.reset();
+      setIsButtonDisabled(true); // Reset button state after form submission
     } catch (err) {
       console.error(err);
       alert("We can't submit the form, try again later?");
@@ -24,16 +35,15 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <form className="contact-container" onSubmit={handleSubmit}>
+      <form className="contact-container" onSubmit={handleSubmit} onChange={handleInputChange}>
         <h2>Get in touch</h2>
         <p>
-        If you're interested in collaborating, have any questions, or would like me to 
-        speak at your event, feel free to reach out. Whether 
-        it's a project inquiry or just a friendly hello, 
-        I'll do my best to respond promptly. My inbox at  is <span>abdibacha67@gmail.com </span>
-        always open, or you can fill out the form below. 
-        Looking forward to connecting with you! Cheers!
-        </p> 
+          If you're interested in collaborating, have any questions, or would like me to speak at
+          your event, feel free to reach out. Whether it's a project inquiry or just a friendly
+          hello, I'll do my best to respond promptly. My inbox at{" "}
+          <span>abdibacha67@gmail.com</span> is always open, or you can fill out the form below.
+          Looking forward to connecting with you! Cheers!
+        </p>
         <div className="allinputs">
           <input
             id="frm-email"
@@ -74,7 +84,9 @@ export default function Contact() {
             placeholder="Message"
           ></textarea>
           <div className="button block">
-            <button type="submit">Submit</button>
+            <button type="submit" disabled={isButtonDisabled} className={isButtonDisabled ? 'blurred' : ''}>
+              Submit
+            </button>
           </div>
         </div>
       </form>

@@ -293,7 +293,7 @@ hr {
 }
 
 .hero-container2 .hero-text p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   /* margin: 1rem 0; */
   text-align: justify;
@@ -335,7 +335,7 @@ hr {
   }
 
   .hero-container2 .hero-text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .mern-img {
@@ -379,7 +379,7 @@ hr {
   }
 
   .hero-container2 .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .hero-text .hero-img {
@@ -1052,7 +1052,6 @@ hr {
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
-  /* background-color: #339933; */
 }
 
 .contact-container h2 {
@@ -1070,22 +1069,19 @@ hr {
   text-align: center;
   width: 100%;
 }
+
 .contact-container p span {
   color: #ffcc1a;
   font-weight: 600;
 }
+
 .contact-container .allinputs {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* height: auto; */
-  /* background-color: #00758f; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* padding: 1rem; */
-
   max-width: 600px;
 }
+
 .contact-container input,
 .contact-container textarea {
   font-size: 1rem;
@@ -1097,37 +1093,60 @@ hr {
   width: 100%;
   box-sizing: border-box;
 }
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #ffcc1a;
+  outline: none;
+}
 
 .contact-container textarea {
   resize: vertical;
 }
 
-.block button {
+.contact-container .button button {
   padding: 0.75rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   width: 100%;
   max-width: 200px;
-  /* border: 2px solid #09a7d3; */
+  border: 2px solid;
   border-radius: 5px;
-  /* background-color: transparent; */
 
-  color: #09a7d3;
+  color: #000000;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   margin-top: 1rem;
   align-self: center;
 }
 
-button:hover {
-  background-color: #09a7d3;
-  color: white;
-  cursor: pointer;
+button:disabled {
+  background-color: #b3b3b3;
+  cursor: not-allowed;
 }
-/* .allinputs button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+
+button:hover:enabled {
+  background-color: #ffcc1a;
+}
+
+.block button.blurred {
+  /* filter: blur(1px); */
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+.block button:disabled {
+  background-color: #b3b3b3;
+  color: white;
+}
+.success-msg {
+  color: #28a745;
+  margin-top: 1rem;
+}
+
+.error-msg {
+  color: #dc3545;
+  margin-top: 1rem;
+}
 
 @media screen and (max-width: 768px) {
   .contact-container {
@@ -1147,7 +1166,7 @@ button:hover {
     width: 80%;
   }
 
-  .block button {
+  .contact-container .button button {
     width: 100%;
   }
 }
@@ -1165,7 +1184,9 @@ button:hover {
     font-size: 0.9rem;
     margin-left: 1rem;
   }
+
   .contact-container .allinputs {
     width: 90%;
   }
 }
+
