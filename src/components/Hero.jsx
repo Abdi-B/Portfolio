@@ -12,9 +12,18 @@ const Hero = () => {
             width={300}
             height={300}
             alt="Abdi's personal img"
+            loading="lazy"
           />
           <h1>Hey, I'm Abdi 👋</h1>
           <div className="social-icons">
+          <a
+            href="mailto:abdibacha67@gmail.com" // Add your email here
+            aria-label="Email"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-solid fa-envelope"></i>  {/* Updated icon class */}
+          </a>
             <a
               // href="https://twitter.com/olawanle_joel"
               aria-label="Twitter"
@@ -65,21 +74,12 @@ const Hero = () => {
               <i className="fa-brands fa-whatsapp"></i>
             </a>
           </div>
+          <div className="cta-button">
+            <a href="#contact" className="cta-link">Contact Me</a>
+          </div>
         </div>
 
         <div className="hero-text">
-          {/* <p>
-            A <span> MERN </span> Full Stack Developer with a solid foundation
-            in building and maintaining dynamic web applications. Proficient in
-            MongoDB, Express.js, React.js, and Node.js.I bring a comprehensive
-            skill set that spans both <span> front-end and back-end </span>{" "}
-            development. Driven by a passion for continuous learning and
-            professional growth, I am committed to delivering high-quality,
-            scalable solutions that meet client needs. Adaptable and
-            self-motivated, I excel in both collaborative and remote work
-            environments, consistently managing time and tasks to achieve
-            project goals efficiently.
-          </p> */}
           <p>
             I’m, a passionate Full Stack Developer dedicated to crafting
             dynamic, responsive web applications. With a solid foundation in
@@ -109,7 +109,7 @@ const Hero = () => {
               className="react-img mern-img"
               width={100}
               height={100}
-              alt="developer"
+              alt="React.js logo representing front-end skills"
             />
 
             <Image
@@ -120,6 +120,7 @@ const Hero = () => {
               alt="developer"
             />
           </div>
+          
         </div>
       </div>
     </section>
