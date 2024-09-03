@@ -6,7 +6,6 @@
 }
 html {
   /* scroll-behavior: smooth; */
-  
 }
 
 body {
@@ -1070,6 +1069,10 @@ hr {
   margin-bottom: 1rem;
   text-align: center;
   width: 100%;
+}
+.contact-container p span {
+  color: #ffcc1a;
+  font-weight: 600;
 }
 .contact-container .allinputs {
   display: flex;

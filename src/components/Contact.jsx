@@ -27,9 +27,12 @@ export default function Contact() {
       <form className="contact-container" onSubmit={handleSubmit}>
         <h2>Get in touch</h2>
         <p>
-          If you want me to work together, have any questions or want me to
-          speak at your event, my inbox is always open. Whether I just want to
-          say hi, I'll try my best to get back to you! Cheers!
+        If you're interested in collaborating, have any questions, or would like me to 
+        speak at your event, feel free to reach out. Whether 
+        it's a project inquiry or just a friendly hello, 
+        I'll do my best to respond promptly. My inbox at  is <span>abdibacha67@gmail.com </span>
+        always open, or you can fill out the form below. 
+        Looking forward to connecting with you! Cheers!
         </p> 
         <div className="allinputs">
           <input
