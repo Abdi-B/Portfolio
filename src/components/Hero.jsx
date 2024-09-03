@@ -16,16 +16,17 @@ const Hero = () => {
           />
           <h1>Hey, I'm Abdi 👋</h1>
           <div className="social-icons">
-          <a
-            href="mailto:abdibacha67@gmail.com" // Add your email here
-            aria-label="Email"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa-solid fa-envelope"></i>  {/* Updated icon class */}
-          </a>
             <a
-              // href="https://twitter.com/olawanle_joel"
+              href="mailto:abdibacha67@gmail.com" // Add your email here
+              aria-label="Email"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-solid fa-envelope"></i>{" "}
+              {/* Updated icon class */}
+            </a>
+            <a
+              href="https://x.com/abdiibacha99?t=L3RD0h3UdQ6IrTuTy49zOg&s=09"
               aria-label="Twitter"
               target="_blank"
               rel="noopener noreferrer"
@@ -66,7 +67,7 @@ const Hero = () => {
               <i className="fa-brands fa-telegram"></i>
             </a>
             <a
-              // href="https://www.linkedin.com/in/olawanlejoel/"
+              href="https://Wa.me/+251967398828"
               aria-label="WhatsApp"
               target="_blank"
               rel="noopener noreferrer"
@@ -75,7 +76,9 @@ const Hero = () => {
             </a>
           </div>
           <div className="cta-button">
-            <a href="#contact" className="cta-link">Contact Me</a>
+            <a href="#contact" className="cta-link">
+              Contact Me
+            </a>
           </div>
         </div>
 
@@ -120,7 +123,6 @@ const Hero = () => {
               alt="developer"
             />
           </div>
-          
         </div>
       </div>
     </section>
