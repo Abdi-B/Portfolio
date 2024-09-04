@@ -146,8 +146,9 @@ li {
     background: none;
     border: none;
     cursor: pointer;
-    padding-left: 0.5rem;
+    padding: 0 0.2rem;
   }
+
   .nav-container {
     padding: 0 1rem;
   }
@@ -278,6 +279,7 @@ hr {
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  cursor: pointer
 }
 
 .cta-link:hover {
@@ -397,7 +399,7 @@ hr {
   /* padding: 2rem 0; */
   padding: 4rem 2rem;
   background-color: #f8f9fa;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -865,7 +867,7 @@ hr {
   /* background-color: #e6e6e6; */
   padding: 4rem 2rem;
   background-color: #f8f9fa;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   color: #1d1e20;
   /* width: 100vw; */
   /* max-width: 1200px; */
@@ -1002,7 +1004,7 @@ hr {
 
   .project-card {
     width: 95%;
-    margin: 0 auto;
+    margin-bottom: 1rem;
   }
 
   .projects-container h2 {
@@ -1095,14 +1097,13 @@ hr {
 }
 .contact-container input:focus,
 .contact-container textarea:focus {
-  border-color: #ffcc1a;
-  outline: none;
+  /* border-color: #0081cb; */
+  outline-color: #ffcc1a;
 }
 
 .contact-container textarea {
   resize: vertical;
 }
-
 .contact-container .button button {
   padding: 0.75rem;
   font-size: 1.2rem;
@@ -1122,6 +1123,7 @@ hr {
 button:disabled {
   background-color: #b3b3b3;
   cursor: not-allowed;
+  border-color: transparent;
 }
 
 button:hover:enabled {
@@ -1189,4 +1191,3 @@ button:hover:enabled {
     width: 90%;
   }
 }
-
