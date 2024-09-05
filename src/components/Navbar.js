@@ -8,14 +8,18 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  // const toggleMenu = (event) => {
+  //   event.stopPropagation(); // Stop propagation to prevent conflicting events
+  //   setIsMenuOpen((prev) => !prev);
+  // };
 
   const closeMenu = () => {
-    setIsMenuOpen(false);
+    setIsMenuOpen(false); // This closes the menu when called
   };
 
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
-      closeMenu();
+      closeMenu(); // Closes the menu if clicking outside of it
     }
   };
 
@@ -29,15 +33,18 @@ const Navbar = () => {
 
   return (
     <nav className="nav-container">
+      {/* Conditionally render hamburger or X icon based on isMenuOpen */}
       <button className="menu-icon" onClick={toggleMenu}>
-        ☰
+        {isMenuOpen ? "✖" : "☰"}
       </button>
+
       <div className="logo">
         <ScrollLink to="projects" smooth={true} duration={500}>
           Abdi's Portfolio
         </ScrollLink>
       </div>
 
+      {/* Apply 'open' class to make menu visible when isMenuOpen is true */}
       <ul className={`hometocontact ${isMenuOpen ? "open" : ""}`} ref={menuRef}>
         <li className="list">
           <ScrollLink
@@ -94,4 +101,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;
