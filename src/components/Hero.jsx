@@ -91,7 +91,6 @@ const Hero = () => {
             </ScrollLink>
           </div>
         </div>
-
         <div className="hero-text">
           <p>
             I’m, a passionate Full Stack Developer dedicated to crafting

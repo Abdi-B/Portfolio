@@ -1,4 +1,4 @@
-import { WadafHero, CoopFileSharing, TMS,wadaf2 } from "../../assets";
+import { WadafHero, CoopFileSharing, TMS, wadaf2 } from "../../assets";
 
 export const projectData = [
   {
@@ -25,7 +25,7 @@ export const projectData = [
     title: "ATM & POS Management System",
     description:
       "A comprehensive solution designed to efficiently Manage, Create, Explore and View operations related to ATMs and POS devices. Generating detailed reports and maintaining logs, ensuring accurate tracking and monitoring activities.",
-    // gitHubLink: "https://github.com/Abdi-B/TMS.git",
+    gitHubLink: "https://github.com/Abdi-B/TMS.git",
     // deployedLink: "https://coop-file-sharing.vercel.app",
   },
   // {
