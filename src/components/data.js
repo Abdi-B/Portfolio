@@ -1,6 +1,9 @@
+import { WadafHero } from "../../assets";
+
 export const projectData = [
   {
     id: 1,
+    img: WadafHero,
     title: "Wadaf Ethiopia Mining PLC",
     description:
       "The profile was built using Next.js, TypeScript, and Tailwind CSS to ensure a modern, responsive, and performant web application.",

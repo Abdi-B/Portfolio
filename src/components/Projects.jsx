@@ -1,5 +1,5 @@
 import { projectData } from './data.js';
-
+import Image from "next/image";
 const Projects = () => {
   return (
     <section id="projects">
@@ -8,7 +8,19 @@ const Projects = () => {
         <div className="projects-grid">
           {projectData && projectData.map((project) => (
             <div className="project-card" key={project.id}>
+              <div>
+                <Image
+           
+                  src={project.img}
+                  className="profile-img"
+                  width={500}
+                  height={300}
+                  alt="screenshoot"
+                  // loading="lazy"
+                />
+                </div>
               <div className="project-header">
+                
                 <i className="fa-regular fa-folder-open folder-icon"></i>
                 <div className="small-icons">
                   <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">
