@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { Link as ScrollLink  } from "react-scroll";
-
+import { Link as ScrollLink } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -82,14 +81,14 @@ const Hero = () => {
               Contact Me
             </a> */}
             <ScrollLink
-            to="contact"
-            smooth={true}
-            duration={500}
-            // spy={true}
-            className="cta-link"
-          >
-            Contact Me
-          </ScrollLink>
+              to="contact"
+              smooth={true}
+              duration={500}
+              // spy={true}
+              className="cta-link"
+            >
+              Contact Me
+            </ScrollLink>
           </div>
         </div>
 

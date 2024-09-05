@@ -10,16 +10,15 @@ const Projects = () => {
             <div className="project-card" key={project.id}>
               <div>
                 <Image
-           
                   src={project.img}
-                  className="profile-img"
-                  width={500}
-                  height={300}
+                  className="projectImage"
+                  width={600}
+                  height={400}
                   alt="screenshoot"
                   // loading="lazy"
                 />
                 </div>
-              <div className="project-header">
+              {/* <div className="project-header">
                 
                 <i className="fa-regular fa-folder-open folder-icon"></i>
                 <div className="small-icons">
@@ -27,7 +26,7 @@ const Projects = () => {
                     <i className="fa-brands fa-github"></i>
                   </a>
                 </div>
-              </div>
+              </div> */}
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="project-links">

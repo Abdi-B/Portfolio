@@ -1,9 +1,9 @@
-import { WadafHero } from "../../assets";
+import { WadafHero, CoopFileSharing, TMS,wadaf2 } from "../../assets";
 
 export const projectData = [
   {
     id: 1,
-    img: WadafHero,
+    img: wadaf2,
     title: "Wadaf Ethiopia Mining PLC",
     description:
       "The profile was built using Next.js, TypeScript, and Tailwind CSS to ensure a modern, responsive, and performant web application.",
@@ -12,7 +12,8 @@ export const projectData = [
   },
   {
     id: 2,
-    title: "Cooperative Bank  file Sharing",
+    img: CoopFileSharing,
+    title: "Cooperative Bank of Oromia  file Sharing",
     description:
       "This MERN stack project streamlines file management and provides easy access to company-provided books. It features an intuitive interface for uploading, organizing, and retrieving files, enhancing document accessibility for employees.",
     gitHubLink: "https://github.com/Abdi-B/coopFileMangement.git",
@@ -20,6 +21,7 @@ export const projectData = [
   },
   {
     id: 3,
+    img: TMS,
     title: "ATM & POS Management System",
     description:
       "A comprehensive solution designed to efficiently Manage, Create, Explore and View operations related to ATMs and POS devices. Generating detailed reports and maintaining logs, ensuring accurate tracking and monitoring activities.",
