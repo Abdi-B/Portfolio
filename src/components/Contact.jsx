@@ -21,6 +21,7 @@ export default function Contact() {
         method: "post",
         body: new URLSearchParams(data),
       });
+      console.log("response " + response);
       if (!response.ok) {
         throw new Error(`Invalid response: ${response.status}`);
       }
