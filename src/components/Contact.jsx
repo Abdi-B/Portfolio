@@ -18,13 +18,15 @@ export default function Contact() {
 
     try {
       const response = await fetch("/api/contact", {
-        method: "post",
+        method: "POST",
         body: new URLSearchParams(data),
       });
-      console.log("response " + response);
+
       if (!response.ok) {
         throw new Error(`Invalid response: ${response.status}`);
       }
+      // const responseData = await response.text();
+      // console.log("ResponseData : " + responseData);
       alert("Thanks for contacting us, we will get back to you soon!");
       form.reset();
       setIsButtonDisabled(true); // Reset button state after form submission
@@ -36,14 +38,19 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <form className="contact-container" onSubmit={handleSubmit} onChange={handleInputChange}>
+      <form
+        className="contact-container"
+        onSubmit={handleSubmit}
+        onChange={handleInputChange}
+      >
         <h2>Get in touch</h2>
         <p>
-          If you're interested in collaborating, have any questions, or would like me to speak at
-          your event, feel free to reach out. Whether it's a project inquiry or just a friendly
-          hello, I'll do my best to respond promptly. My inbox at{" "}
-          <span>abdibacha67@gmail.com</span> is always open, or you can fill out the form below.
-          Looking forward to connecting with you! Cheers!
+          If you're interested in collaborating, have any questions, or would
+          like me to speak at your event, feel free to reach out. Whether it's a
+          project inquiry or just a friendly hello, I'll do my best to respond
+          promptly. My inbox at <span>abdibacha67@gmail.com</span> is always
+          open, or you can fill out the form below. Looking forward to
+          connecting with you! Cheers!
         </p>
         <div className="allinputs">
           <input
@@ -85,7 +92,11 @@ export default function Contact() {
             placeholder="Message"
           ></textarea>
           <div className="button block">
-            <button type="submit" disabled={isButtonDisabled} className={isButtonDisabled ? 'blurred' : ''}>
+            <button
+              type="submit"
+              disabled={isButtonDisabled}
+              className={isButtonDisabled ? "blurred" : ""}
+            >
               Submit
             </button>
           </div>
