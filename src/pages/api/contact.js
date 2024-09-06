@@ -4,6 +4,7 @@ import nodemailer from 'nodemailer';
 export default async function handler(req, res) {
   if (req.method === 'POST') {
     const { first, last, email, phone, message } = req.body;
+    // console.log(req.body)
 
     if (!first || !last || !email || !message) {
       return res.status(400).json({ error: 'All fields are required' });
@@ -48,6 +49,7 @@ export default async function handler(req, res) {
       await transporter.sendMail(mailOptions);
 
       res.status(200).json({ message: 'Message sent successfully' });
+      // console.log(success)
     } catch (error) {
       console.error('Error sending email:', error);
       res.status(500).json({ error: 'Failed to send message' });
