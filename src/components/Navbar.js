@@ -4,37 +4,45 @@ import { Link as ScrollLink } from "react-scroll";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
+  const menuButtonRef = useRef(null);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
   };
-  // const toggleMenu = (event) => {
-  //   event.stopPropagation(); // Stop propagation to prevent conflicting events
-  //   setIsMenuOpen((prev) => !prev);
-  // };
 
   const closeMenu = () => {
-    setIsMenuOpen(false); // This closes the menu when called
+    setIsMenuOpen(false);
   };
 
   const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
-      closeMenu(); // Closes the menu if clicking outside of it
+    // If the click is outside both the menu and the button, close the menu
+    if (
+      menuRef.current &&
+      !menuRef.current.contains(event.target) &&
+      menuButtonRef.current &&
+      !menuButtonRef.current.contains(event.target)
+    ) {
+      closeMenu();
     }
   };
 
   useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
 
+    // Cleanup event listener on unmount
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [isMenuOpen]);
 
   return (
     <nav className="nav-container">
       {/* Conditionally render hamburger or X icon based on isMenuOpen */}
-      <button className="menu-icon" onClick={toggleMenu}>
+      <button className="menu-icon" onClick={toggleMenu} ref={menuButtonRef}>
         {isMenuOpen ? "✖" : "☰"}
       </button>
 
