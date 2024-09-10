@@ -581,7 +581,7 @@ hr {
   flex-direction: column;
   justify-content: center; */
   align-items: center;
-  /* background-color: #2496ed; */
+  background-color: #2496ed;
   margin: 0 auto;
   /* text-align: center; */
 }
@@ -804,7 +804,7 @@ hr {
 @media screen and (max-width: 968px) {
   .skills-container {
     width: 100%;
-    padding: 1rem 0;
+    padding: 1rem ;
     /* text-align: center; */
     /* display: flex;
     flex-direction: column;
