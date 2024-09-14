@@ -1077,7 +1077,7 @@ hr {
   font-weight: 400;
   margin-bottom: 1rem;
   text-align: justify;
-  width: 80%;
+  width: 90%;
 }
 
 .contact-container p span {
@@ -1193,6 +1193,7 @@ button:hover:enabled {
   .contact-container p {
     font-size: 0.9rem;
     margin-left: 1rem;
+    width: 95%;
   }
 
   .contact-container .allinputs {
