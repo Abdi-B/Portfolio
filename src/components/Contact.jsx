@@ -41,13 +41,10 @@ export default function Contact() {
     <section id="contact">
       <form className="contact-container" onSubmit={handleSubmit} onChange={handleInputChange}>
         <h2>Get in touch</h2>
-        <p>
-          If you're interested in collaborating, have any questions, or would like me to speak at
-          your event, feel free to reach out. Whether it's a project inquiry or just a friendly
-          hello, I'll do my best to respond promptly. Inbox me at{" "}
-          <span>contactabdi.bacha@gmail.com</span> or call me on <span>+251 6739 8828</span> is always open, or you can fill out the form below.
-          Looking forward to connecting with you! Cheers!
-        </p>
+        <p>Whether you're interested in collaborating, have a project inquiry, or just want to say hello, 
+          I’d love to hear from you! Feel free to reach out via email at <span>contactabdi.bacha@gmail.com</span> or 
+          give me a call at <span>+251 6739 8828</span>. Alternatively, you can fill out the form below, and 
+          I'll get back to you as soon as possible. Looking forward to connecting and creating something great together! Cheers!</p>
         <div className="allinputs">
           <input
             id="frm-email"
