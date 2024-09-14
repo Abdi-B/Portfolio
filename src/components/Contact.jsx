@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export default function Contact() {
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+  const [isLoading, setIsLoading] = useState(false); // Manage loading state
 
   function handleInputChange(e) {
     const form = e.currentTarget.form || e.currentTarget;
@@ -13,6 +14,7 @@ export default function Contact() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    setIsLoading(true); // Set loading state to true
     const form = e.currentTarget;
     const data = new FormData(form);
 
@@ -30,6 +32,8 @@ export default function Contact() {
     } catch (err) {
       console.error(err);
       alert("We can't submit the form, try again later?");
+    } finally {
+      setIsLoading(false); // Reset loading state after submission
     }
   }
 
@@ -84,8 +88,16 @@ export default function Contact() {
             placeholder="Message"
           ></textarea>
           <div className="button block">
-            <button type="submit" disabled={isButtonDisabled} className={isButtonDisabled ? 'blurred' : ''}>
-              Submit
+            <button
+              type="submit"
+              disabled={isButtonDisabled || isLoading}
+              className={isButtonDisabled ? "blurred" : ""}
+            >
+              {isLoading ? (
+                <i className="fa-solid fa-circle-notch fa-spin"></i>
+              ) : (
+                "Submit"
+              )}
             </button>
           </div>
         </div>

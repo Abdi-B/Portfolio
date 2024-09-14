@@ -134,7 +134,7 @@ li {
     border-radius: 0 5px;
     padding: auto;
     z-index: 1000;
-  } 
+  }
   .hometocontact.open {
     display: block;
   }
@@ -155,7 +155,6 @@ li {
     margin-right: 2rem;
   }
 }
-
 
 /* Footer */
 
@@ -279,7 +278,7 @@ hr {
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .cta-link:hover {
@@ -581,7 +580,7 @@ hr {
   flex-direction: column;
   justify-content: center; */
   align-items: center;
-  background-color: #2496ed;
+  /* background-color: #2496ed; */
   margin: 0 auto;
   /* text-align: center; */
 }
@@ -804,7 +803,7 @@ hr {
 @media screen and (max-width: 968px) {
   .skills-container {
     width: 100%;
-    padding: 1rem ;
+    padding: 1rem;
     /* text-align: center; */
     /* display: flex;
     flex-direction: column;
@@ -886,10 +885,8 @@ hr {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  
+
   justify-content: center;
-
-
 }
 
 .project-card {
