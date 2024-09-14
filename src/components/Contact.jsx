@@ -44,8 +44,8 @@ export default function Contact() {
         <p>
           If you're interested in collaborating, have any questions, or would like me to speak at
           your event, feel free to reach out. Whether it's a project inquiry or just a friendly
-          hello, I'll do my best to respond promptly. My inbox at{" "}
-          <span>abdibacha67@gmail.com</span> is always open, or you can fill out the form below.
+          hello, I'll do my best to respond promptly. Inbox me at{" "}
+          <span>contactabdi.bacha@gmail.com</span> or call me on <span>+251 6739 8828</span> is always open, or you can fill out the form below.
           Looking forward to connecting with you! Cheers!
         </p>
         <div className="allinputs">
