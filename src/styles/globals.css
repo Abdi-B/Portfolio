@@ -1073,11 +1073,11 @@ hr {
 }
 
 .contact-container p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  text-align: center;
-  width: 100%;
+  text-align: justify;
+  width: 80%;
 }
 
 .contact-container p span {
