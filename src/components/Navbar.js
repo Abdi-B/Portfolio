@@ -103,7 +103,7 @@ const Navbar = () => {
           </ScrollLink>
         </li>
       </ul>
-      <a href="/resume.pdf" className="cta-btn" download>
+      <a href="/Resume.pdf" className="cta-btn" download>
          Resume
       </a>
     </nav>
