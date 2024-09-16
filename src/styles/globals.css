@@ -565,16 +565,17 @@ hr {
     margin-left: 1rem; */
     /* align-items: center; */
 
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(2, 1fr);
   }
-};
+}
 @media screen and (max-width: 580px) {
   .about-text .competency {
     width: 80%;
     grid-template-columns: repeat(1, 1fr);
     /* text-align: center; */
     margin: 0 auto;
+    /* background-color: #00758f; */
   }
 }
 
