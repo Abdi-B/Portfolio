@@ -36,7 +36,6 @@ export default function Contact() {
       setIsLoading(false); // Reset loading state after submission
     }
   }
-
   return (
     <section id="contact">
       <form className="contact-container" onSubmit={handleSubmit} onChange={handleInputChange}>
