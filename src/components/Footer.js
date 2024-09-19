@@ -1,4 +1,5 @@
 const Footer = () => {
+
   return (
     <>
       <hr />
@@ -29,6 +30,14 @@ const Footer = () => {
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>
+          <a
+              href="https://join.skype.com/invite/O8dYUnRViYh2"
+              aria-label="Skype"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-skype"></i>
+            </a>
         </div>
       </div>
     </>
